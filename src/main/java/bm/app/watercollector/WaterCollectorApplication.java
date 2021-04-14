@@ -1,5 +1,7 @@
 package bm.app.watercollector;
 
+import bm.app.watercollector.controllers.RestController;
+import bm.app.watercollector.service.WaterService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
