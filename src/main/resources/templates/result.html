@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="result.css">
 </head>
+<style>
+    body {
+        background-color: sandybrown;
+    }
+</style>
 <body>
-<div th:text="'Result: ' + ${calculationResult}"/>
+<div id="header">The number of spaces the water will fill is:</div>
+<div class="subheader" th:text="${calculationResult}"/>
+<div class="button">
+    <form action="/landingpage" method="get">
+        <input type="submit" value="Back to menu.">
+    </form>
+</div>
 </body>
 </html>

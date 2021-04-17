@@ -1,7 +1,7 @@
 #header {
     text-align: center;
     font-size: 40px;
-    background-color: lightcoral;
+    background-color: darkseagreen;
     margin-left: 400px;
     margin-right: 400px;
     margin-top: 50px;
@@ -16,14 +16,14 @@
 
 #header:hover{
     border-color: deepskyblue;
-    background: yellow;
-    color: rosybrown;
+    background: darkcyan;
+    color: silver;
 }
 
 .subheader{
     text-align: center;
     padding: 10px;
-    background-color: green;
+    background-color: lightblue;
     margin-left: 400px;
     margin-right: 400px;
     margin-top: 50px;
@@ -35,21 +35,7 @@
     transition: all 2s;
 }
 
-.subheader:hover{
-    border-color: pink;
-    background: black;
-    color: silver;
-}
-
-.input{
-    text-align: center;
-    margin-left: 600px;
-    margin-right: 600px;
-    margin-top: 20px;
-    transition: all 3s;
-}
-
-.button{
+.button {
     text-align: center;
     margin-left: 600px;
     margin-right: 600px;
