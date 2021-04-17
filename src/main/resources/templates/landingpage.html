@@ -15,7 +15,7 @@
     <div class="subheader">Please, provide the numbers, separated by a comma, that you'd like to be a part of the array.</div>
         <form action="/calculate" method="post">
             <div class="input">
-            <input type="text" name="numbers" placeholder="Numbers for the array" oninvalid="alert('You must fill out the form!');" pattern="[0-9].{2,}" required>
+            <input type="text" name="numbers" placeholder="Numbers for the array" oninvalid="alert('Please, fill out the form correctly.');" pattern="(?:\d+,)[0-9].{2,}" required>
             </div>
             <div class="button">
             <input type="submit" value="Calculate">

@@ -18,6 +18,6 @@ public class RestController {
 
     @GetMapping("/water/fillcount")
     public int getNumberOfFieldsWaterFills(@RequestParam int[] val) throws ArrayTooSmallException {
-        return waterService.maxWater(val);
+        return waterService.maxWaterForRestApi(val);
     }
 }
