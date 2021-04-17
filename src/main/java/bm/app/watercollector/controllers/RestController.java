@@ -1,8 +1,8 @@
 package bm.app.watercollector.controllers;
 
+import bm.app.watercollector.exception.ArrayTooSmallException;
 import bm.app.watercollector.service.WaterService;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -17,7 +17,7 @@ public class RestController {
     }
 
     @GetMapping("/water/fillcount")
-    public int getNumberOfFieldsWaterFills(@RequestParam int[] val) {
+    public int getNumberOfFieldsWaterFills(@RequestParam int[] val) throws ArrayTooSmallException {
         return waterService.maxWater(val);
     }
 }
