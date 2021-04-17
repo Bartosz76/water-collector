@@ -33,7 +33,7 @@ class WaterServiceTest {
         int[] array = {2};
         //then
         assertThatExceptionOfType(ArrayTooSmallException.class).isThrownBy(() ->
-                waterService.maxWater(array));
+                waterService.maxWaterForRestApi(array));
     }
 
     @BeforeEach

@@ -16,9 +16,9 @@ public class ThymeleafController {
         this.waterService = waterService;
     }
 
-    @GetMapping("/landingpage")
+    @GetMapping("/waterCollector")
     public String getLandingPage() {
-        return "landingpage";
+        return "waterCollector";
     }
 
     @PostMapping("/calculate")
@@ -30,6 +30,4 @@ public class ThymeleafController {
         model.addAttribute("calculationResult", calculationResult);
         return "result";
     }
-
-
 }

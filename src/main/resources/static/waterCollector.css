@@ -41,6 +41,25 @@
     color: silver;
 }
 
+.subheader2{
+    text-align: center;
+    padding: 10px;
+    background-color: goldenrod;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 5px;
+    border: 5px solid black;
+    font-size: 20px;
+
+    transition: all 2s;
+}
+
+.subheader2:hover{
+    border-color: pink;
+    background: palegoldenrod;
+    color: silver;
+}
+
 .input{
     text-align: center;
     margin-left: 600px;

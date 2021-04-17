@@ -28,23 +28,30 @@ public class WaterService {
     }
 
     public int maxWater(int[] arr) {
-        int res = 0;
-        for(int i = 1; i < arr.length - 1; i++) {
-            int left = arr[i];
-            for(int j = 0; j < i; j++) {
-                left = Math.max(left, arr[j]);
+        int result = 0;
+        int left_max = 0, right_max = 0;
+        int low = 0, high = arr.length - 1;
+        while (low <= high) {
+            if (arr[low] < arr[high]) {
+                if (arr[low] > left_max)
+                    left_max = arr[low];
+                else
+                    result += left_max - arr[low];
+                low++;
             }
-            int right = arr[i];
-            for(int j = i + 1; j < arr.length; j++) {
-                right = Math.max(right, arr[j]);
+            else {
+                if (arr[high] > right_max)
+                    right_max = arr[high];
+                else
+                    result += right_max - arr[high];
+                high--;
             }
-            res += Math.min(left, right) - arr[i];
         }
         logger.info("Called water collector counting mechanism for an array of size "
                 + arr.length
                 + " with the result of "
-                + res + ".");
-        return res;
+                + result + ".");
+        return result;
     }
 
     /**
